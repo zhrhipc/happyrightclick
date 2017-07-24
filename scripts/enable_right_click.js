@@ -24,7 +24,7 @@ let noMouseRestrict = {
 
 function addSelectStyle() {
 	let elem = document.createElement('style');
-	elem.innerHTML = '* {-webkit-user-drag: auto !important; -webkit-user-select: text !important;' + '-moz-user-drag: auto !important; -moz-user-select: text !important;' + '-khtml-user-drag: auto !important; -khtml-user-select: text !important;' + 'user-drag: auto !important; user-select: text !important;}';
+	elem.textContent = '* {-webkit-user-drag: auto !important; -webkit-user-select: text !important;' + '-moz-user-drag: auto !important; -moz-user-select: text !important;' + '-khtml-user-drag: auto !important; -khtml-user-select: text !important;' + 'user-drag: auto !important; user-select: text !important;}';
 	document.head.appendChild(elem);
 }
 

@@ -5,18 +5,14 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   clip-rule="evenodd"
-   fill-rule="evenodd"
-   image-rendering="optimizeQuality"
-   shape-rendering="geometricPrecision"
-   text-rendering="geometricPrecision"
-   viewBox="0 0 500 500"
-   version="1.1"
    id="svg3707"
-   sodipodi:docname="icon_smile.svg"
-   inkscape:version="0.92.1 r15371">
+   version="1.1"
+   viewBox="0 0 500 500"
+   text-rendering="geometricPrecision"
+   shape-rendering="geometricPrecision"
+   image-rendering="optimizeQuality"
+   fill-rule="evenodd"
+   clip-rule="evenodd">
   <metadata
      id="metadata3711">
     <rdf:RDF>
@@ -29,138 +25,108 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1841"
-     inkscape:window-height="1053"
-     id="namedview3709"
-     showgrid="false"
-     inkscape:snap-bbox="true"
-     inkscape:zoom="1.69"
-     inkscape:cx="182.24852"
-     inkscape:cy="250"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg3707" />
   <defs
      id="defs3695">
     <linearGradient
-       gradientUnits="userSpaceOnUse"
-       id="a"
-       x1="153.649"
-       x2="206.347"
+       y2="195.258"
        y1="34.743"
-       y2="195.258">
+       x2="206.347"
+       x1="153.649"
+       id="a"
+       gradientUnits="userSpaceOnUse">
       <stop
-         offset="0"
+         id="stop3680"
          stop-color="#FCFCFD"
-         id="stop3680" />
+         offset="0" />
       <stop
-         offset="1"
+         id="stop3682"
          stop-color="#DDDEDE"
-         id="stop3682" />
+         offset="1" />
     </linearGradient>
     <linearGradient
-       gradientUnits="userSpaceOnUse"
-       id="b"
-       x1="293.649"
-       x2="346.347"
+       y2="195.258"
        y1="34.743"
-       y2="195.258">
+       x2="346.347"
+       x1="293.649"
+       id="b"
+       gradientUnits="userSpaceOnUse">
       <stop
-         offset="0"
+         id="stop3685"
          stop-color="#FCFCFD"
-         id="stop3685" />
+         offset="0" />
       <stop
-         offset="1"
+         id="stop3687"
          stop-color="#DDDEDE"
-         id="stop3687" />
+         offset="1" />
     </linearGradient>
     <radialGradient
-       cx="249.998"
-       cy="366.884"
-       fx="249.998"
-       fy="366.884"
-       gradientUnits="userSpaceOnUse"
+       r="140.001"
        id="c"
-       r="140.001">
+       gradientUnits="userSpaceOnUse"
+       fy="366.884"
+       fx="249.998"
+       cy="366.884"
+       cx="249.998">
       <stop
-         offset="0"
+         id="stop3690"
          stop-color="#FDFEFE"
-         id="stop3690" />
+         offset="0" />
       <stop
-         offset="1"
+         id="stop3692"
          stop-color="#DDDEDE"
-         id="stop3692" />
+         offset="1" />
     </radialGradient>
   </defs>
   <g
-     id="g3705"
-     stroke-linejoin="round"
+     stroke="#434242"
      stroke-width="10"
-     stroke="#434242">
+     stroke-linejoin="round"
+     id="g3705">
     <path
-       d="M110 200v-17c0-84 60-153 133-153h7v170h-140z"
+       fill="url(#a)"
        id="path3697"
-       fill="url(#a)" />
+       d="M110 200v-17c0-84 60-153 133-153h7v170h-140z" />
     <path
-       d="M390 200v-17c0-84-60-153-133-153h-7v170h140z"
+       fill="url(#b)"
        id="path3699"
-       fill="url(#b)" />
+       d="M390 200v-17c0-84-60-153-133-153h-7v170h140z" />
     <path
-       d="M110 200v112c0 82 54 153 140 153s140-71 140-153v-112h-280z"
+       fill="url(#c)"
        id="path3701"
-       fill="url(#c)" />
+       d="M110 200v112c0 82 54 153 140 153s140-71 140-153v-112h-280z" />
     <rect
-       height="100"
-       rx="10"
-       ry="13"
-       width="30.002"
-       x="235"
-       y="115"
+       fill="#279DFF"
        id="rect3703"
-       fill="#279DFF" />
+       y="115"
+       x="235"
+       width="30.002"
+       ry="13"
+       rx="10"
+       height="100" />
   </g>
   <g
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="Layer 1"
-     style="display:inline">
+     style="display:inline"
+     id="layer1">
     <path
-       inkscape:connector-curvature="0"
-       class="cls-2"
-       d="m 185.74184,366.36215 c 0,0 54.38569,57.46529 123.1839,0"
-       id="path3749"
        style="fill:none;stroke:#231f20;stroke-width:12.31838894px;stroke-linecap:round;stroke-miterlimit:10"
-       inkscape:transform-center-x="-717.9618"
-       inkscape:transform-center-y="-60.573017" />
+       id="path3749"
+       d="m 185.74184,366.36215 c 0,0 54.38569,57.46529 123.1839,0"
+       class="cls-2" />
     <ellipse
-       class="cls-3"
-       cx="204.21944"
-       cy="280.13339"
-       rx="18.477585"
-       ry="24.636778"
+       style="fill:#231f20;stroke-width:6.15919447"
        id="ellipse3751"
-       style="fill:#231f20;stroke-width:6.15919447"
-       inkscape:transform-center-x="-674.84751"
-       inkscape:transform-center-y="-159.57186" />
-    <ellipse
-       class="cls-3"
-       cx="290.44818"
-       cy="280.13339"
-       rx="18.477585"
        ry="24.636778"
-       id="ellipse3753"
+       rx="18.477585"
+       cy="280.13339"
+       cx="204.21944"
+       class="cls-3" />
+    <ellipse
        style="fill:#231f20;stroke-width:6.15919447"
-       inkscape:transform-center-x="-761.07624"
-       inkscape:transform-center-y="-159.57186" />
+       id="ellipse3753"
+       ry="24.636778"
+       rx="18.477585"
+       cy="280.13339"
+       cx="290.44818"
+       class="cls-3" />
   </g>
 </svg>
