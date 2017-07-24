@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "__MSG_extensionName__",
+	"version": "1.0",
+	"description": "__MSG_extensionDescription__",
+	"icons": {
+		"48": "icons/icon_smile.svg"
+	},
+	"page_action": {
+		"default_icon": "icons/icon_disabled.svg",
+		"browser_style": true
+	},
+	"background": {
+		"scripts": ["scripts/background.js"]
+	},
+	"permissions": [
+		"tabs",
+		"activeTab",
+		"http://*/*",
+		"https://*/*",
+		"file:///*"
+	],
+	 "default_locale": "en"
+}

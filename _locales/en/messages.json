@@ -1,0 +1,18 @@
+{
+  "extensionName": {
+    "message": "Happy Right-Click",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Enable Right-Click.",
+    "description": "Description of the extension."
+  },
+  "titleEnabled": {
+    "message": "Right-Click Enabled",
+    "description": "Title of the PageAction."
+  },
+    "titleDisabled": {
+    "message": "Click to Enable Right-Click",
+    "description": "Title of the PageAction."
+  }
+}

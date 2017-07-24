@@ -1,0 +1,18 @@
+{
+  "extensionName": {
+    "message": "快乐右键",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "解锁鼠标右键",
+    "description": "Description of the extension."
+  },
+  "titleEnabled": {
+    "message": "右键已解锁",
+    "description": "Title of the PageAction."
+  },
+    "titleDisabled": {
+    "message": "点击解锁右键",
+    "description": "Title of the PageAction."
+  }
+}
