@@ -12,16 +12,17 @@ function addEvt(obj, type) {
 	obj.addEventListener(type, enableDefault, true);
 }
 
-function apply(events, node) {
+function apply(func, events, node) {
 	let length = events.length;
 	for (let i = 0; i < length; i++) {
-		addEvt(node, events[i]);
+		func(node, events[i]);
 	}
 }
 
 function noMouseRestrict(events) {
-	apply(events, window);
-	apply(events, document);
+	apply(addEvt, events, window);
+	apply(addEvt, events, document);
 }
 
-noMouseRestrict(['contextmenu', 'selectstart', 'select', 'copy', 'beforecopy', 'cut', 'beforecut', 'paste', 'beforepaste', 'dragstart', 'dragend', 'drag', 'mousedown', 'mouseup', 'mousemove']);
+let targetEvents = ['contextmenu', 'selectstart', 'select', 'copy', 'beforecopy', 'cut', 'beforecut', 'paste', 'beforepaste', 'dragstart', 'dragend', 'drag', 'mousedown', 'mouseup', 'mousemove'];
+noMouseRestrict(targetEvents);

@@ -1,13 +1,13 @@
 {
 	"manifest_version": 2,
 	"name": "__MSG_extensionName__",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "__MSG_extensionDescription__",
 	"icons": {
 		"48": "icons/icon_smile_48.png",
         "96": "icons/icon_smile_96.png"
 	},
-	"page_action": {
+	"browser_action": {
 		"default_icon": "icons/icon_disabled.svg",
 		"browser_style": true
 	},

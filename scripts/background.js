@@ -13,42 +13,37 @@ function protocolIsApplicable(url) {
 }
 
 /*
-Initialize the page action: set icon and title, then show.
+Initialize the browser action: set icon and title, then show.
 Only operates on tabs whose URL's protocol is applicable.
  */
-function initializePageAction(tab) {
+function initializeBrowserAction(tab) {
 	if (protocolIsApplicable(tab.url)) {
-		browser.pageAction.setIcon({
-			tabId: tab.id,
-			path: "icons/icon_disabled.svg"
-		});
-		browser.pageAction.setTitle({
-			tabId: tab.id,
-			title: TITLE_DISABLED
-		});
-		browser.pageAction.show(tab.id);
-	}
+        browser.browserAction.enable(tab.id);
+    }
+    else {
+        browser.browserAction.disable(tab.id);
+    }
 }
 
 /*
-When first loaded, initialize the page action for all tabs.
+When first loaded, initialize the browser action for all tabs.
  */
 let gettingAllTabs = browser.tabs.query({});
 gettingAllTabs.then((tabs) => {
 	for (tab of tabs) {
-		initializePageAction(tab);
+		initializeBrowserAction(tab);
 	}
 });
 
 /*
-Each time a tab is updated, reset the page action for that tab.
+Each time a tab is updated, reset the browser action for that tab.
  */
 browser.tabs.onUpdated.addListener((id, changeInfo, tab) => {
-	initializePageAction(tab);
+	initializeBrowserAction(tab);
 });
 
 /*
-Enable Right-Click when the page action is clicked.
+Enable Right-Click when the browser action is clicked.
  */
 function enableRightClick(tab) {
 	browser.tabs.executeScript(null, {
@@ -59,18 +54,18 @@ function enableRightClick(tab) {
 		allFrames: true,
 		code: CSS
 	});
-	browser.pageAction.setIcon({
+	browser.browserAction.setIcon({
 		tabId: tab.id,
 		path: "icons/icon_enabled.svg"
 	});
-	browser.pageAction.setTitle({
+	browser.browserAction.setTitle({
 		tabId: tab.id,
 		title: TITLE_ENABLED
 	});
 }
 
 /*
-Disable Right-Click when the page action is clicked.
+Disable Right-Click when the browser action is clicked.
  */
 function disableRightClick(tab) {
 	browser.tabs.executeScript(null, {
@@ -81,11 +76,11 @@ function disableRightClick(tab) {
 		allFrames: true,
 		code: CSS
 	});
-	browser.pageAction.setIcon({
+	browser.browserAction.setIcon({
 		tabId: tab.id,
 		path: "icons/icon_disabled.svg"
 	});
-	browser.pageAction.setTitle({
+	browser.browserAction.setTitle({
 		tabId: tab.id,
 		title: TITLE_DISABLED
 	});
@@ -93,7 +88,7 @@ function disableRightClick(tab) {
 
 /*
 Toggle Right-Click: based on the current title, enable or disable the Right-Click functon.
-Update the page action's title and icon to reflect its state.
+Update the browser action's title and icon to reflect its state.
  */
 function toggleRightClick(tab) {
 
@@ -105,10 +100,12 @@ function toggleRightClick(tab) {
 		}
 	}
 
-	var gettingTitle = browser.pageAction.getTitle({
-			tabId: tab.id
-		});
-	gettingTitle.then(gotTitle);
+    if (protocolIsApplicable(tab.url)) {
+        var gettingTitle = browser.browserAction.getTitle({
+                tabId: tab.id
+            });
+        gettingTitle.then(gotTitle);
+    }
 }
 
-browser.pageAction.onClicked.addListener(toggleRightClick);
+browser.browserAction.onClicked.addListener(toggleRightClick);
