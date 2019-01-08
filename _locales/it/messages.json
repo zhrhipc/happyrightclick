@@ -1,0 +1,18 @@
+{
+  "extensionName": {
+    "message": "Happy Right-Click",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Abilita clic destro.",
+    "description": "Description of the extension."
+  },
+  "titleEnabled": {
+    "message": "Clic destro abilitato",
+    "description": "Title of the PageAction."
+  },
+    "titleDisabled": {
+    "message": "Clicca per abilitare il clic destro.",
+    "description": "Title of the PageAction."
+  }
+}
